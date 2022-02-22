@@ -4,6 +4,10 @@
 <h3> Average Actor Age: <%= @average_age %></h2>
 <h2> Actors: </h2>
 
+<h4>
+  <%= button_to "Add Actor", "/movies/#{@movie.id}/new", method: :get %>
+</h4>
+
 <% @actors.each do |actor| %>
 <p><%= actor.name %></p>
 <% end %>

@@ -34,4 +34,10 @@ RSpec.describe 'Movies Show Page' do
     visit "/movies/#{@movie.id}"
     expect(page).to have_content(64.5)
   end
+
+  it 'should link to add actor' do
+    visit "/movies/#{@movie.id}"
+    click_button("Add Actor")
+    expect(current_path).to eq("/movies/#{@movie.id}/new")
+  end
 end
