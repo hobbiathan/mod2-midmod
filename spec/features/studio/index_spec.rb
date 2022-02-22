@@ -21,8 +21,8 @@ RSpec.describe 'Studio Index' do
   end
 
   it 'Displays titles of all movies belonging to respective studio' do
-    expect(page).to have_content(@movie.name)
-    expect(page).to have_content(@movie_two.name)
-    expect(page).to have_content(@movie_three.name)
+    expect(page).to have_content(@movie.title)
+    expect(page).to have_content(@movie_two.title)
+    expect(page).to have_content(@movie_three.title)
   end
 end
