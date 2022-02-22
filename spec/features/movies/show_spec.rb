@@ -30,12 +30,8 @@ RSpec.describe 'Movies Show Page' do
     expect(page).to_not have_content(@movie_three.genre)
   end
 
-  it 'should list all actors from youngest to oldest' do
-    visit "/movies/#{@movie.id}"
-
-  end
-
   it 'should show average actor age' do
-
+    visit "/movies/#{@movie.id}"
+    expect(page).to have_content(64.5)
   end
 end
