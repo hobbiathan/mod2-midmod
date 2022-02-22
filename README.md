@@ -1,3 +1,9 @@
+# Reflection
+
+Writing this here because I don't know where else to put it, though I also don't know if I should completely get rid of everything in this read me or etc......
+
+Basically, singularity vs. plurality kinda screwed me when it came to setting up Actors and MovieActors - specifically, the MovieActor singularity of belonging_to(:movie, :actor). I honestly thought this project would screw me more because I still didn't feel I had the strongest grip on being able to actually create many-to-many relationships (conceptually they make sense though, rails cli arguments are just a spook), but it ended up just being something tiny that ate up a lot of my time - I feel that if I had figured it out earlier, I would've been able to work through User Story 3 more, of which seemed slightly trickier, but not impossible.
+
 # B2 Assessments
 
 Base repository for B2 assessments and diagnostics.
